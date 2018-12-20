@@ -1,0 +1,78 @@
+# Direnv helpers
+# Add this to your .envrc:
+#  if [ -e "direnvrc" ]; then
+#      source_env direnvrc
+#  fi
+
+GIT_BRANCH_NAME=$(git rev-parse --abbrev-ref 2> /dev/null || true)
+GIT_REPO_NAME=$(basename `git rev-parse --show-toplevel` 2> /dev/null || true)
+GCLOUD_PROJECT=$(gcloud config get-value project 2> /dev/null || true)
+GCLOUD_REGION=$(gcloud config get-value compute/region 2> /dev/null || true)
+GCLOUD_ZONE=$(gcloud config get-value compute/zone 2> /dev/null || true)
+
+# Import privare envrc if it exists
+source_private(){
+    if [ -e .envrc.private ]; then
+        watch_file .envrc.private
+        source_env .envrc.private
+    fi
+}
+
+# Log message if DEBUG==true
+log_debug(){
+    if [ "${DEBUG}" == true ]; then
+        log_status ${1}
+    fi
+}
+
+# Verify that all required tools are available
+check_tools(){
+    for tool in ${REQUIRED_TOOLS[@]}; do
+        if ! has ${tool}; then
+            log_error "required tool not found: ${tool}"
+            exit 2
+        else
+            log_debug "found required tool: $(which ${tool})"
+        fi
+    done
+}
+
+# Export list of environment vars.  Prune empty values.
+export_vars(){
+    for var in ${EXPORT_VARS[@]}; do
+        val=$(eval echo \$$var)
+        if [ ! -z ${val} ]; then
+            log_debug "export ${var}=${val}"
+            export ${var}=${val}
+        fi
+    done
+}
+
+# Activate GCP Service account.
+# Params:
+#   Path to credential JSON file
+activate_gcp_service_account(){
+    gcloud auth activate-service-account --key-file "${1}"
+}
+
+# Get K8s credential
+# Params:
+#   Cluster ID
+activate_k8s_credential(){
+    gcloud container clusters get-credentials "${1}"
+}
+
+# Add Helm chart repository
+# Params:
+#    Name of repo
+#    URL of repo
+add_helm_repo(){
+    helm repo add "${1}" "${2}"
+}
+
+# Select or create Terraform workspace
+# Params:
+#    Name or workspace
+activate_terraform_workspace(){
+    terraform workspace select ${1} || terraform workspace new ${1}
+}
