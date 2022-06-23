@@ -1,0 +1,4 @@
+#! /bin/bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+echo 'eval"$(/opt/homebrew/bin/brew shellenv)"' >> /Users/{{ .chezmoi.username }}/.zprofile
+eval"$(/opt/homebrew/bin/brew shellenv)"
