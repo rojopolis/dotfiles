@@ -1,0 +1,11 @@
+2022-06-20 14:09:16,779 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 14:09:16,780 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 14:09:16,792 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "twingate-qa", --zone: "us-central1-a", NAME: "keyclock-prototype"]
+2022-06-20 14:09:16,794 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-06-20 14:09:16,799 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 14:09:17,042 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-qa/locations/us-central1-a/clusters/keyclock-prototype?alt=json HTTP/1.1" 200 None
+2022-06-20 14:09:17,155 DEBUG    root            Saved kubeconfig to /Users/rojo/.kube/config
+2022-06-20 14:09:17,155 INFO     ___FILE_ONLY___ kubeconfig entry generated for keyclock-prototype.
+
+2022-06-20 14:09:17,155 INFO     root            Display format: "default"

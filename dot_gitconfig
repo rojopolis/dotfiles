@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Robert Jordan
+	email = robert@twingate.com
+[init]
+	defaultBranch = main
+[push]
+	default = current
+[core]
+	excludesfile = /Users/rojo/.gitignore

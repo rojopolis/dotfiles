@@ -1,0 +1,25 @@
+2022-06-21 19:07:16,664 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2022-06-21 19:07:16,664 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2022-06-21 19:07:16,665 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2022-06-21 19:07:16,668 INFO     root            Display format: "default json"
+2022-06-21 19:07:16,668 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "robert@twingate.com",
+        "disable_usage_reporting": "True"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0ARrdaM8tH32Cytw_CQYjZ42o4GiihD2OIVOsgnhVFwvdyiNnLWtTmH2rIYgH71uttAcnCWcPZ9_piW6f9kTEAi2Oux5NvgKCAqTzoPWg6DJFBMVesW0lg0IJyAU3xEn0mkc7O2cK1K1q9-BxVfw0kPOWhwwm8aQzpllmkw",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjJiMDllNzQ0ZDU4Yzk5NTVkNGYyNDBiNmE5MmY3YjM3ZmVhZDJmZjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE2MjkyNTA3MTI2MTE3NTk2NjM1IiwiaGQiOiJ0d2luZ2F0ZS5jb20iLCJlbWFpbCI6InJvYmVydEB0d2luZ2F0ZS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImRJSDYwNEVFbmlWQXEtSVpMZ2tpQlEiLCJpYXQiOjE2NTU4NjM0MDMsImV4cCI6MTY1NTg2NzAwM30.cjVHC-7CyZo1m7P41LK2g-6XPjY_NSA64EMLDDWpl7qs9EQrKCMs0ngLmkRNKJR6dIobhul4itjSWsV536Ywlj4EAp2tncZ6OLS861s4FeGMLXQMdxrTxUU3Fm0d4-_f8Z7esPeWCTM_mupdZIh6ZJ_CAiMxr8m7Css-DQA30_LI-2rsMZi8WbDQdInw6yOOkHN6Q--z0mc_3O1OWvbsGUjKRv87lZmfo9b2_nvgdqR79W1FMXfUctpycZyYQ-vcyEKg9LVrFnZK_CrJkplXFKK88cDD5DSUsTdrzdfX8ETpDDnTVdqF0PHxrgH4EaKJWmTVFA9wI1u0LQavLIFNoQ",
+    "token_expiry": "2022-06-22T03:03:22Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/rojo/.config/gcloud/config_sentinel"
+  }
+}
+2022-06-21 19:07:16,668 INFO     ___FILE_ONLY___ 
+

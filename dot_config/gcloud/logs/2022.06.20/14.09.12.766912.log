@@ -1,0 +1,11 @@
+2022-06-20 14:09:12,768 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 14:09:12,769 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 14:09:12,779 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "twingate-playground", --zone: "us-west2", NAME: "twindemo-k8s"]
+2022-06-20 14:09:12,781 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-06-20 14:09:12,791 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 14:09:12,921 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-playground/locations/us-west2/clusters/twindemo-k8s?alt=json HTTP/1.1" 200 None
+2022-06-20 14:09:13,031 DEBUG    root            Saved kubeconfig to /Users/rojo/.kube/config
+2022-06-20 14:09:13,031 INFO     ___FILE_ONLY___ kubeconfig entry generated for twindemo-k8s.
+
+2022-06-20 14:09:13,031 INFO     root            Display format: "default"

@@ -1,4 +1,31 @@
 #! /bin/bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-echo 'eval"$(/opt/homebrew/bin/brew shellenv)"' >> /Users/{{ .chezmoi.username }}/.zprofile
+echo 'eval"$(/opt/homebrew/bin/brew shellenv)"' >> {{ .chezmoi.homeDir }}/.zprofile
 eval"$(/opt/homebrew/bin/brew shellenv)"
+
+cat << EOF > "{{ .chezmoi.homeDir }}/Library/LaunchAgents/dev.robertjordan.brewfile-monitor.plist"
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+        <dict>
+            <key>Label</key>
+        <string>dev.robertjordan.brewfile-monitor</string>
+        <key>OnDemand</key>
+        <true/>
+        <key>Program</key>
+        <string>/opt/homebrew/bin/brew</string>
+        <key>ProgramArguments</key>
+        <array>
+                <string>/opt/homebrew/bin/brew</string>
+                <string>bundle</string>
+                <string>--file={{ .chezmoi.homeDir }}/.Brewfile</string>
+        </array>
+        <key>WatchPaths</key>
+
+        <array>
+                <string>{{ .chezmoi.homeDir }}/.Brewfile</string>
+        </array>
+        </dict>
+    </plist>
+EOF
+launchctl load "{{ .chezmoi.homeDir }}/Library/LaunchAgents/dev.robertjordan.brewfile-monitor.plist"

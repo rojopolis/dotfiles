@@ -1,0 +1,11 @@
+2022-06-20 12:34:49,686 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 12:34:49,687 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 12:34:49,698 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "twingate-playground", --zone: "us-east1", NAME: "marshall-cluster-k8s"]
+2022-06-20 12:34:49,699 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-06-20 12:34:49,706 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 12:34:49,951 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-playground/locations/us-east1/clusters/marshall-cluster-k8s?alt=json HTTP/1.1" 200 None
+2022-06-20 12:34:49,997 DEBUG    root            Saved kubeconfig to /Users/rojo/.kube/config
+2022-06-20 12:34:49,997 INFO     ___FILE_ONLY___ kubeconfig entry generated for marshall-cluster-k8s.
+
+2022-06-20 12:34:49,997 INFO     root            Display format: "default"

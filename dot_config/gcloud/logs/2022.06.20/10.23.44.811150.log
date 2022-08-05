@@ -1,0 +1,193 @@
+2022-06-20 10:23:44,812 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 10:23:44,813 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'list']
+2022-06-20 10:23:44,824 DEBUG    root            Running [gcloud.container.clusters.list] with arguments: [--project: "twingate-dev"]
+2022-06-20 10:23:44,866 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 10:23:45,263 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-dev/locations/-/clusters?alt=json HTTP/1.1" 200 None
+2022-06-20 10:23:45,298 INFO     root            Display format: "
+    table(
+        name,
+        zone:label=LOCATION,
+        master_version():label=MASTER_VERSION,
+        endpoint:label=MASTER_IP,
+        nodePools[0].config.machineType,
+        currentNodeVersion:label=NODE_VERSION,
+        firstof(currentNodeCount,initialNodeCount):label=NUM_NODES,
+        status
+    )
+"
+2022-06-20 10:23:45,319 INFO     ___FILE_ONLY___ NAME
+2022-06-20 10:23:45,337 INFO     ___FILE_ONLY___                       
+2022-06-20 10:23:45,337 INFO     ___FILE_ONLY___ LOCATION
+2022-06-20 10:23:45,337 INFO     ___FILE_ONLY___        
+2022-06-20 10:23:45,337 INFO     ___FILE_ONLY___ MASTER_VERSION
+2022-06-20 10:23:45,337 INFO     ___FILE_ONLY___    
+2022-06-20 10:23:45,354 INFO     ___FILE_ONLY___ MASTER_IP
+2022-06-20 10:23:45,354 INFO     ___FILE_ONLY___         
+2022-06-20 10:23:45,354 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2022-06-20 10:23:45,354 INFO     ___FILE_ONLY___       
+2022-06-20 10:23:45,354 INFO     ___FILE_ONLY___ NODE_VERSION
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___         
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ NUM_NODES
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ STATUS
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ twingate-stg
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___               
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ us-central1
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___     
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ 1.22.8-gke.201
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___    
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ 35.184.234.228
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___    
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ n1-highmem-4
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___       
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ 1.21.11-gke.1100 *
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ 19
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___          
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ RECONCILING
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___ app-us-central1-a-dev
+2022-06-20 10:23:45,372 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ us-central1-a
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 34.68.43.159
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ n2-custom-4-6144
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 9
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ app-us-central1-a-sec
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ us-central1-a
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 34.72.182.109
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___     
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ n2-custom-4-6144
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 9
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ twingate-stg-relays-us-2
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ us-central1-a
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 1.22.7-gke.1500
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 104.154.189.171
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ n1-standard-2
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,373 INFO     ___FILE_ONLY___ 1.22.7-gke.1500
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 3
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ twingate-dev-relays-us-1
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ us-central1-b
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 35.202.116.239
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___    
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ n1-standard-2
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 3
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ twingate-sec-relays-us-1
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ us-central1-b
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 146.148.66.44
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___     
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ n1-standard-2
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 3
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,374 INFO     ___FILE_ONLY___ app-us-east4-stg
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ us-east4
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___        
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 1.22.7-gke.1500
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 35.221.5.117
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ n1-highmem-4
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___       
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 1.21.11-gke.1100 *
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 9
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ app-us-east4-a-dev
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___         
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ us-east4-a
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 34.86.61.53
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___       
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ n2-highcpu-4
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___       
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 1.22.8-gke.2200
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 9
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ twingate-stg-relays-us-1
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ us-west1-a
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 1.22.7-gke.1500
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___   
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 104.198.12.236
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___    
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ n1-standard-2
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 1.22.7-gke.1500
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___      
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___ 3
+2022-06-20 10:23:45,375 INFO     ___FILE_ONLY___           
+2022-06-20 10:23:45,376 INFO     ___FILE_ONLY___ RUNNING
+2022-06-20 10:23:45,376 INFO     ___FILE_ONLY___ 
+
+2022-06-20 10:23:45,376 INFO     ___FILE_ONLY___ 
+* - There is an upgrade available for your cluster(s).
+
+To upgrade nodes to the latest available version, run
+  $ gcloud container clusters upgrade NAME
+

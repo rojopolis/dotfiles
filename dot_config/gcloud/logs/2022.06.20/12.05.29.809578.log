@@ -1,0 +1,3 @@
+2022-06-20 12:05:29,810 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 12:05:29,812 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 12:05:29,812 ERROR    root            (gcloud.container.clusters.get-credentials) argument --zone/-z: expected one argument

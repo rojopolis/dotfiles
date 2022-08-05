@@ -1,0 +1,11 @@
+2022-06-20 12:36:49,076 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 12:36:49,077 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 12:36:49,087 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "twingate-playground", --zone: "us-central1", NAME: "eugene-test"]
+2022-06-20 12:36:49,088 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-06-20 12:36:49,094 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 12:36:49,313 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-playground/locations/us-central1/clusters/eugene-test?alt=json HTTP/1.1" 200 None
+2022-06-20 12:36:49,424 DEBUG    root            Saved kubeconfig to /Users/rojo/.kube/config
+2022-06-20 12:36:49,424 INFO     ___FILE_ONLY___ kubeconfig entry generated for eugene-test.
+
+2022-06-20 12:36:49,425 INFO     root            Display format: "default"

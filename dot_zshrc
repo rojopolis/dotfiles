@@ -72,8 +72,8 @@ ZSH_CUSTOM=~/Workspace/github.com/rojopolis/omz-plugins
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(alias gcloud git gke terraform direnv)
-
+plugins=(alias direnv gcloud git gh gke kubectl terraform)
+ 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

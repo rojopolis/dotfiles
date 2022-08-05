@@ -1,0 +1,82 @@
+2022-06-20 12:20:21,121 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2022-06-20 12:20:21,122 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2022-06-20 12:20:21,123 DEBUG    root            Running [gcloud.projects.list] with arguments: [--format: "json"]
+2022-06-20 12:20:21,123 INFO     root            client_filter="None" server_filter="None"
+2022-06-20 12:20:21,129 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+ json"
+2022-06-20 12:20:21,138 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2022-06-20 12:20:21,385 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/1.1" 200 None
+2022-06-20 12:20:21,385 INFO     ___FILE_ONLY___ [
+  {
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "createTime": "2021-01-06T00:53:43.323Z",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "lifecycleState": "ACTIVE",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "name": "Twingate Playground",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "parent": {
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+      "id": "36245044849",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+      "type": "organization"
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    },
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "projectId": "twingate-playground",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "projectNumber": "417269620845"
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+  }
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ ,
+  {
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "createTime": "2020-12-30T00:57:29.969Z",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "lifecycleState": "ACTIVE",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "name": "Twingate QA",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "parent": {
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+      "id": "36245044849",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+      "type": "organization"
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    },
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "projectId": "twingate-qa",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "projectNumber": "1049287440173"
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+  }
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ ,
+  {
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "createTime": "2019-08-21T14:46:58.718Z",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "lifecycleState": "ACTIVE",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "name": "Twingate Development",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "parent": {
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+      "id": "36245044849",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+      "type": "organization"
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    },
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "projectId": "twingate-dev",
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+    "projectNumber": "789646587646"
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+  }
+2022-06-20 12:20:21,386 INFO     ___FILE_ONLY___ 
+]
+

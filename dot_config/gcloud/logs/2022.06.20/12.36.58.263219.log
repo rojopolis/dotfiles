@@ -1,0 +1,11 @@
+2022-06-20 12:36:58,264 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 12:36:58,266 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 12:36:58,276 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "twingate-qa", --zone: "us-central1-a", NAME: "beamreachinc-stg"]
+2022-06-20 12:36:58,277 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-06-20 12:36:58,285 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 12:36:58,514 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-qa/locations/us-central1-a/clusters/beamreachinc-stg?alt=json HTTP/1.1" 200 None
+2022-06-20 12:36:58,625 DEBUG    root            Saved kubeconfig to /Users/rojo/.kube/config
+2022-06-20 12:36:58,625 INFO     ___FILE_ONLY___ kubeconfig entry generated for beamreachinc-stg.
+
+2022-06-20 12:36:58,626 INFO     root            Display format: "default"

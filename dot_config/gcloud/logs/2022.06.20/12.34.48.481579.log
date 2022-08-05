@@ -1,0 +1,11 @@
+2022-06-20 12:34:48,482 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 12:34:48,484 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 12:34:48,494 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "twingate-playground", --zone: "us-central1", NAME: "sf-playground"]
+2022-06-20 12:34:48,495 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-06-20 12:34:48,509 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 12:34:48,734 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-playground/locations/us-central1/clusters/sf-playground?alt=json HTTP/1.1" 200 None
+2022-06-20 12:34:48,766 DEBUG    root            Saved kubeconfig to /Users/rojo/.kube/config
+2022-06-20 12:34:48,767 INFO     ___FILE_ONLY___ kubeconfig entry generated for sf-playground.
+
+2022-06-20 12:34:48,767 INFO     root            Display format: "default"

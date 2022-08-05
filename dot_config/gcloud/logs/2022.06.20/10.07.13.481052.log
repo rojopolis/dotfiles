@@ -1,0 +1,11 @@
+2022-06-20 10:07:13,482 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2022-06-20 10:07:13,483 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2022-06-20 10:07:13,493 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "twingate-dev", --zone: "us-central1-a", NAME: "app-us-central1-a-sec"]
+2022-06-20 10:07:13,495 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2022-06-20 10:07:13,538 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2022-06-20 10:07:13,802 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/twingate-dev/locations/us-central1-a/clusters/app-us-central1-a-sec?alt=json HTTP/1.1" 200 None
+2022-06-20 10:07:13,825 DEBUG    root            Saved kubeconfig to /Users/rojo/.kube/config
+2022-06-20 10:07:13,826 INFO     ___FILE_ONLY___ kubeconfig entry generated for app-us-central1-a-sec.
+
+2022-06-20 10:07:13,826 INFO     root            Display format: "default"
