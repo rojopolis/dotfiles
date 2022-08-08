@@ -9,14 +9,14 @@ tap "homebrew/core"
 tap "homebrew/autoupdate"
 
 brew "checkov" # IaC policy check https://checkov.io
-brew "chezmoi" # Dotfile manager https://chezmoi.io
+brew "chezmoi", args: ["overwrite"] # Dotfile manager https://chezmoi.io
 brew "direnv" # Conetxt based environment manager https://diren/v.net/
 brew "gh" # Github Cli
 brew "git" # Git SCM client
 brew "helm" # Package Manager for Kubernetes
 brew "httpie" # Advanced HTTP client
 brew "jq" # JSON Parser
-brew "kubernetes-cli" # Kubecfg
+brew "kubernetes-cli", args: ["overwrite"] # Kubecfg
 brew "kube-linter" # Syntax checker for Kubernetes Manifests
 brew "kube-ps1" # Shell prompt for Kubernetes
 brew "kubectx" # Kunernetes context manager
