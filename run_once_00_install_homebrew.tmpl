@@ -3,7 +3,7 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh 
 if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]
     echo 'eval"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> {{ .chezmoi.homeDir }}/.profile
     eval"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-elif
+else
  [ -f /usr/local/bin/brew ]
     echo 'eval"$(/usr/local/bin/brew shellenv)"' >> {{ .chezmoi.homeDir }}/.profile
     eval"$(/usr/local/bin/brew shellenv)"
