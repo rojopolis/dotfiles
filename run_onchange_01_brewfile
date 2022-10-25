@@ -1,4 +1,10 @@
 #!/bin/bash
 
 # Brewfile hash: {{ include "~/.Brewfile" | sha256sum }}
+if [ -f /home/linuxbrew/.linuxbrew/bin/brew ] ; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+else
+ [ -f /usr/local/bin/brew ]
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
 brew bundle --file=~/.Brewfile
