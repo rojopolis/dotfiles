@@ -1,6 +1,6 @@
 #!/bin/bash
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | NONINTERACTIVE=true bash
-if [ -f /home/linuxbrew/.linuxbrew/bin/brew ]
+if [ -f /home/linuxbrew/.linuxbrew/bin/brew ] ; then
     echo 'eval"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> {{ .chezmoi.homeDir }}/.profile
     eval"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 else
