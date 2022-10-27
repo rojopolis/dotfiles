@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Robert Jordan
-	email = robert@twingate.com
+	email = robert@robertjordan.dev
 [init]
 	defaultBranch = main
 [push]

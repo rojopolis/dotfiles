@@ -1,5 +1,0 @@
-#!/bin/bash -x
-
-# Pipfile hash: {{ include "~/.Pipfile" | sha256sum }}
-PIPENV_PIPFILE=~/.Pipfile pipenv lock
-PIPENV_PIPFILE=~/.Pipfile pipenv install --system --deploy
