@@ -1,3 +1,4 @@
+{{ if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
 # Brewfile hash: {{ include "~/.Brewfile" | sha256sum }}
@@ -8,3 +9,4 @@ else
     eval "$(/usr/local/bin/brew shellenv)"
 fi
 brew bundle --file=~/.Brewfile
+{{ end }}

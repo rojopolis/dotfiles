@@ -1,3 +1,4 @@
+{{ if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | NONINTERACTIVE=true bash
 if [ -f /home/linuxbrew/.linuxbrew/bin/brew ] ; then
@@ -8,3 +9,4 @@ else
     echo 'eval "$(/usr/local/bin/brew shellenv)"' >> {{ .chezmoi.homeDir }}/.profile
     eval "$(/usr/local/bin/brew shellenv)"
 fi
+{{ end }}

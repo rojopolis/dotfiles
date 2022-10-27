@@ -1,4 +1,4 @@
-
+{{ if eq .chezmoi.os "darwin" -}}
 tap "github/gh"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
@@ -67,3 +67,4 @@ cask "vlc" # Video Lan
 cask "visual-studio-code" # Code Editor
 cask "utm" # QEMU Wrapper
 cask "skype" # OG voip
+{{ end }}
